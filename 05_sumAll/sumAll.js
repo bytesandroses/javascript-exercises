@@ -1,6 +1,6 @@
 const sumAll = function() {
-  let minNum = arguments[0];
-  let maxNum = arguments[1];
+  let minNum = Math.min(arguments[0], arguments[1]);
+  let maxNum = Math.max(arguments[0], arguments[1]);
   let sumNumbers = 0;
   for (let i = minNum; i < maxNum + 1; i++) {
     sumNumbers += i;
