@@ -1,4 +1,7 @@
 const sumAll = function() {
+  if (arguments[0] < 0 || arguments[1] < 0) {
+    return "ERROR";
+  }
   let minNum = Math.min(arguments[0], arguments[1]);
   let maxNum = Math.max(arguments[0], arguments[1]);
   let sumNumbers = 0;
